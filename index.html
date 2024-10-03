@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS file -->
+</head>
+<body>
+
+    <!-- Blog Title -->
+    <header>
+        <h1>Welcome to the Science Blog</h1>
+        <p>Share your knowledge and learn from others!</p>
+    </header>
+    <section class="hero">
+        <video autoplay muted loop id="heroVideo">
+            <source src="HeroBg1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Exploring the Universe of Science</h1>
+            <p>Join us on a journey through the wonders of physics, astronomy, and more.</p>
+        </div>
+    </section>
+    <!-- Content Display Section -->
+    <section id="content-section">
+        <h2>Latest Posts</h2>
+        <div id="posts"></div> <!-- Div for displaying user posts -->
+    </section>
+
+    <!-- Content Upload Section -->
+    <section id="upload-section">
+        <h2>Upload Your Post</h2>
+        <form id="upload-form">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br><br>
+
+            <label for="image">Upload Image:</label><br>
+            <input type="file" id="image" accept="image/*"><br><br>
+
+            <button type="button" onclick="uploadPost()">Submit Post</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script> <!-- Linking JavaScript file -->
+
+</body>
+</html>
